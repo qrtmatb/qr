@@ -7,7 +7,13 @@
 
 html {
     min-height: 100vh;
-    background-image: url("./pics/background.jpg");
+    background: #E55D87;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5FC3E4, #E55D87);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Poppins", sans-serif;
@@ -243,7 +249,7 @@ section {
     }
 
     .hero .action-container h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .hero .action-container p {
@@ -276,8 +282,9 @@ section {
 
     .hero .img-container {
         justify-content: center;
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
     }
+
     .hero .img-container::before {
         border-width: 10rem;
         right: unset;
@@ -300,12 +307,15 @@ section {
     25% {
         transform: translateY(30px);
     }
+
     50% {
         transform: translateY(0px);
     }
+
     75% {
         transform: translateY(-30px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -319,15 +329,19 @@ section {
     0% {
         box-shadow: -14px 26px 41px 20px rgba(0, 0, 0, 0.349);
     }
+
     25% {
         box-shadow: -14px 26px 41px 30px rgba(0, 0, 0, 0.349);
     }
+
     50% {
         box-shadow: -14px 26px 41px 20px rgba(0, 0, 0, 0.349);
     }
+
     75% {
         box-shadow: -14px 26px 41px 10px rgba(0, 0, 0, 0.349);
     }
+
     100% {
         box-shadow: -14px 26px 41px 20px rgba(0, 0, 0, 0.349);
     }
@@ -341,12 +355,15 @@ section {
     0% {
         text-shadow: 0px 0px 12px #ddd2db;
     }
+
     30% {
         text-shadow: 0px 0px 100px #ddd2db;
     }
+
     60% {
         text-shadow: 0px 0px 20px #d465c0;
     }
+
     100% {
         text-shadow: 0px 0px 20px #ddd2db;
     }
@@ -361,6 +378,7 @@ section {
         transform: translateX(-100vw);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
